@@ -1,0 +1,47 @@
+@import "../config";
+
+.new {
+  background-color: $dark;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h2 {
+    color: $orange;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .new-section {
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+    h3 {
+      color: white;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+      padding: 1rem 0;
+    }
+
+    h3:hover {
+      color: $orange;
+      cursor: pointer;
+    }
+
+    p {
+      color: $light-gray;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .new-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

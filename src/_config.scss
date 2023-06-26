@@ -1,0 +1,14 @@
+// Variables
+$orange: hsl(35, 77%, 62%);
+$red: hsl(5, 85%, 63%);
+$off-white: hsl(36, 100%, 99%);
+$light-gray: hsl(233, 8%, 79%);
+$gray: hsl(236, 13%, 42%);
+$dark: hsl(240, 100%, 5%);
+$font-family: "Montserrat", sans-serif;
+
+%button {
+  border: none;
+  background: $dark;
+  cursor: pointer;
+}

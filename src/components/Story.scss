@@ -1,0 +1,46 @@
+@import "../_config.scss";
+
+.story {
+  display: flex;
+  width: 33%;
+
+  img {
+    width: 25%;
+    height: auto;
+  }
+
+  .story-text {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      color: $light-gray;
+    }
+
+    h3 {
+      color: $dark;
+    }
+
+    h3:hover {
+      color: $red;
+      cursor: pointer;
+    }
+
+    p {
+      color: $gray;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .story {
+    width: 100%;
+    margin-bottom: 2rem;
+
+    .story-text {
+      justify-content: space-evenly;
+    }
+  }
+}

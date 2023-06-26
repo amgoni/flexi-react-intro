@@ -1,0 +1,46 @@
+@import "../config.scss";
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  padding-right: 2rem;
+
+  img {
+    margin-bottom: 2rem;
+  }
+
+  &-writeup {
+    display: flex;
+
+    &-heading {
+      width: 50%;
+      margin-right: 2rem;
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    .headline-writeup-detail {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 1rem 0;
+
+      button {
+        @extend %button;
+        color: white;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        font-family: $font-family;
+        line-height: 1.5;
+        letter-spacing: 2px;
+      }
+
+      button:hover {
+        background-color: $red;
+      }
+    }
+  }
+}
